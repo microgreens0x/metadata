@@ -25,8 +25,8 @@ app.get('/api/token/:token_id', function(req, res) {
     'name': person.name,
     'attributes': {
       'contestant': person.contestant
-    },    
-    'image': `${HOST}/images/surviveth.1.png`
+    },
+    'image': `${HOST}/images/microgreens0x.${tokenId}.png`
   }
   res.send(data)
 })

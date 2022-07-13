@@ -1,4 +1,4 @@
-const HOST = 'https://mint.micgrogreen0x.com'
+const HOST = 'https://mint.micgrogreens0x.com'
 
 module.exports = {
   HOST
