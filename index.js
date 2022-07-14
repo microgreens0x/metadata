@@ -24,10 +24,9 @@ app.get('/api/token/:token_id', function(req, res) {
   const data = {
     'name': person.product,
     'attributes': {
-      'warranty': person.warranty
-      'warranty': person.warranty
-      'condition': person.condition
-      'quality': person.quality
+      'warranty': person.warranty,
+      'condition': person.condition,
+      'quality': person.quality,
       'size': person.warranty
     },
     'image': `${HOST}/images/microgreens0x.${person.img}.png`
