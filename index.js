@@ -27,7 +27,7 @@ app.get('/api/token/:token_id', function(req, res) {
       'warranty': person.warranty,
       'condition': person.condition,
       'quality': person.quality,
-      'size': person.warranty
+      'size': person.size
     },
     'image': `${HOST}/images/microgreens0x.${person.img}.png`
   }
