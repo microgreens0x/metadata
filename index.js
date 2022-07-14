@@ -22,11 +22,15 @@ app.get('/api/token/:token_id', function(req, res) {
   const tokenId = parseInt(req.params.token_id).toString()
   const person = db[tokenId]
   const data = {
-    'name': person.name,
+    'name': person.product,
     'attributes': {
-      'contestant': person.contestant
+      'warranty': person.warranty
+      'warranty': person.warranty
+      'condition': person.condition
+      'quality': person.quality
+      'size': person.warranty
     },
-    'image': `${HOST}/images/microgreens0x.${tokenId}.png`
+    'image': `${HOST}/images/microgreens0x.${person.img}.png`
   }
   res.send(data)
 })
