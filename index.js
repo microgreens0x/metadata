@@ -29,7 +29,7 @@ app.get('/api/token/:token_id', function(req, res) {
       'quality': person.quality,
       'size': person.size
     },
-    'image': `${HOST}/images/microgreens0x.${person.img}.png`
+    'image': `${HOST}/images/${person.img}.png`
   }
   res.send(data)
 })
