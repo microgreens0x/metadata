@@ -28,6 +28,7 @@ app.get('/api/token/:token_id', function(req, res) {
       'warranty': person.warranty,
       'condition': person.condition,
       'quality': person.quality,
+      'location': person.location,
       'size': person.size
     },
     'image': `${HOST}/images/${person.img}.png`
